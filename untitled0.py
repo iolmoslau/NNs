@@ -4,6 +4,7 @@ Created on Fri Oct  6 09:17:02 2023
 
 @author: isdao
 """
+import numpy as np
 
 class NeuralNet():
     def __init__(self,dim: tuple):
@@ -15,5 +16,16 @@ class NeuralNet():
         self.outputsize = tuple[3]
         
         #define parameters of network
+        #initialize list of weight matrices
+        weight_mats = []
+        
+        for _ in range(self.depth):
+            weight_mats.append(np.random.randn(self.width,
+                                               self.inputsize))
+        
+    def 
+            
+            
+            
         
         
